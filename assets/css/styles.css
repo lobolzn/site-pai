@@ -749,14 +749,8 @@ a {
    RESPONSIVE — XL (≥ 1600px)
 ══════════════════════════════ */
 @media (min-width: 1600px) {
-  .products-inner {
-    overflow: visible;
-  }
-
   .products-grid {
-    overflow: visible;
     justify-content: center;
-    flex-wrap: wrap;
   }
 }
 

@@ -12,22 +12,28 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap"></noscript>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preload" as="image" href="assets/images/1.webp" type="image/webp">
 </head>
 
 <body>
 
   <!-- ── HERO ── -->
   <section class="hero">
-    <img src="assets/images/1.jpeg" alt="James Lobo" class="hero-bg">
+    <picture>
+      <source srcset="assets/images/1.webp" type="image/webp">
+      <img src="assets/images/1.jpeg" alt="James Lobo" class="hero-bg" width="896" height="1098" fetchpriority="high">
+    </picture>
     <div class="hero-content">
       <h1 class="hero-headline">22 anos de atuação em campanhas eleitorais</h1>
       <div class="hero-center-col">
         <div class="hero-logo-wrap">
-          <img src="assets/images/logo.jpeg" alt="JLAA - James Lobo Advogados Associados">
+          <picture>
+            <source srcset="assets/images/logo.webp" type="image/webp">
+            <img src="assets/images/logo.jpeg" alt="JLAA - James Lobo Advogados Associados" width="1258" height="622">
+          </picture>
         </div>
         <div class="hero-cta-box">
           <p>Está preparado para enfrentar as Eleições de 2026?</p>
@@ -41,7 +47,10 @@
   <section class="about">
     <div class="about-inner">
       <div class="about-left">
-        <img src="assets/images/7.jpeg" alt="James Lobo" class="about-photo">
+        <picture>
+          <source srcset="assets/images/7.webp" type="image/webp">
+          <img src="assets/images/7.jpeg" alt="James Lobo" class="about-photo" width="1024" height="1536" loading="lazy">
+        </picture>
         <h2>Atuação em campanhas eleitorais há 22 anos</h2>
       </div>
       <div class="about-body">
@@ -68,7 +77,10 @@
         <div class="product-item">
           <div class="product-badge">Lançamento</div>
           <div class="product-cover">
-            <img src="assets/images/2.jpeg" alt="E-book Manual de Prática Eleitoral 2026">
+            <picture>
+              <source srcset="assets/images/2.webp" type="image/webp">
+              <img src="assets/images/2.jpeg" alt="E-book Manual de Prática Eleitoral 2026" width="1032" height="1600" loading="lazy">
+            </picture>
           </div>
           <div class="product-info">
             <div class="product-type">E-book</div>
@@ -88,7 +100,10 @@
         <!-- Produto 2 -->
         <div class="product-item">
           <div class="product-cover">
-            <img src="assets/images/3.jpeg" alt="E-book Condutas Vedadas">
+            <picture>
+              <source srcset="assets/images/3.webp" type="image/webp">
+              <img src="assets/images/3.jpeg" alt="E-book Condutas Vedadas" width="1131" height="1600" loading="lazy">
+            </picture>
           </div>
           <div class="product-info">
             <div class="product-type">E-book</div>
@@ -108,7 +123,10 @@
         <!-- Produto 3 -->
         <div class="product-item">
           <div class="product-cover">
-            <img src="assets/images/4.jpeg" alt="Vídeo Curso Condutas Vedadas">
+            <picture>
+              <source srcset="assets/images/4.webp" type="image/webp">
+              <img src="assets/images/4.jpeg" alt="Vídeo Curso Condutas Vedadas" width="415" height="740" loading="lazy">
+            </picture>
           </div>
           <div class="product-info">
             <div class="product-type">Vídeo Curso</div>
@@ -128,7 +146,10 @@
         <!-- Produto 4 -->
         <div class="product-item">
           <div class="product-cover">
-            <img src="assets/images/5.jpeg" alt="E-book Manual 2024">
+            <picture>
+              <source srcset="assets/images/5.webp" type="image/webp">
+              <img src="assets/images/5.jpeg" alt="E-book Manual 2024" width="512" height="800" loading="lazy">
+            </picture>
           </div>
           <div class="product-info">
             <div class="product-type">E-book</div>
@@ -148,7 +169,10 @@
         <!-- Produto 5 -->
         <div class="product-item">
           <div class="product-cover">
-            <img src="assets/images/6.jpeg" alt="Vídeo Curso Prática Eleitoral 2024">
+            <picture>
+              <source srcset="assets/images/6.webp" type="image/webp">
+              <img src="assets/images/6.jpeg" alt="Vídeo Curso Prática Eleitoral 2024" width="400" height="600" loading="lazy">
+            </picture>
           </div>
           <div class="product-info">
             <div class="product-type">Vídeo Curso</div>
@@ -170,7 +194,10 @@
 
   <!-- ── AGRADECIMENTOS ── -->
   <section class="thanks">
-    <img src="assets/images/7.jpeg" class="thanks-photo" alt="James Lobo">
+    <picture>
+      <source srcset="assets/images/7.webp" type="image/webp">
+      <img src="assets/images/7.jpeg" class="thanks-photo" alt="James Lobo" width="1024" height="1536" loading="lazy">
+    </picture>
     <div class="thanks-inner">
       <h2>Agradecimentos</h2>
       <div class="thanks-card">
@@ -189,7 +216,10 @@
 
   <!-- ── FOOTER ── -->
   <footer class="footer">
-    <img src="assets/images/logo.jpeg" alt="JLAA" class="footer-logo">
+    <picture>
+      <source srcset="assets/images/logo.webp" type="image/webp">
+      <img src="assets/images/logo.jpeg" alt="JLAA" class="footer-logo" width="1258" height="622" loading="lazy">
+    </picture>
     <div class="footer-links">
       <div class="footer-socials">
         <a href="https://www.instagram.com/jamesloboadv/" target="_blank" class="social-btn social-btn--instagram" aria-label="Instagram">

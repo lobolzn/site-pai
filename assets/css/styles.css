@@ -203,7 +203,8 @@ a {
 .products-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 32px 48px;
+  padding: 0 0 48px;
+  overflow: hidden;
 }
 
 /* Fileira horizontal com scroll no mobile */
@@ -212,8 +213,9 @@ a {
   flex-direction: row;
   gap: 20px;
   overflow-x: auto;
-  padding: 32px 0 24px;
+  padding: 32px 24px 24px;
   scroll-snap-type: x mandatory;
+  scroll-padding-left: 24px;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -607,27 +609,25 @@ a {
     margin-top: 0;
   }
 
-  /* Products: 5 colunas em fileira */
+  /* Products: scroll visível no desktop médio */
   .products-inner {
     max-width: 1800px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px 60px;
+    padding: 0 0 60px;
+    overflow: hidden;
   }
 
   .products-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 12px;
-    padding: 48px 0 40px;
-    overflow: visible;
+    gap: 16px;
+    padding: 48px 24px 40px;
+    scroll-padding-left: 24px;
+    justify-content: flex-start;
   }
 
   .product-item {
-    flex: 0 0 300px;
-    min-width: 300px;
+    flex: 0 0 280px;
+    min-width: 280px;
     padding: 32px 20px;
     gap: 16px;
   }
@@ -735,8 +735,28 @@ a {
   }
 
   .products-inner {
-    padding: 0 80px;
+    padding: 0 0 60px;
     max-width: 1200px;
+  }
+
+  .products-grid {
+    padding: 48px 40px 40px;
+    scroll-padding-left: 40px;
+  }
+}
+
+/* ══════════════════════════════
+   RESPONSIVE — XL (≥ 1600px)
+══════════════════════════════ */
+@media (min-width: 1600px) {
+  .products-inner {
+    overflow: visible;
+  }
+
+  .products-grid {
+    overflow: visible;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 

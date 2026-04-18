@@ -356,11 +356,10 @@ a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
-  padding: 13px 28px;
+  padding: 13px 16px;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.2s, transform 0.15s;
-  white-space: nowrap;
 }
 
 .btn-buy:hover {

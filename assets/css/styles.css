@@ -451,9 +451,35 @@ a {
   color: #D4A843;
 }
 
-.footer-whatsapp {
-  color: #4fc06a !important;
-  font-weight: 600;
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: transform 0.2s, opacity 0.2s;
+  flex-shrink: 0;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.88;
+}
+
+.social-btn--instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-btn--whatsapp {
+  background: #25d366;
 }
 
 /* ══════════════════════════════
@@ -686,6 +712,10 @@ a {
 
   .footer-links {
     text-align: right;
+  }
+
+  .footer-socials {
+    justify-content: flex-end;
   }
 }
 
